@@ -8,12 +8,11 @@
 
 module BioGenerics
     
-
 #include("declare.jl")
-#include("Exceptions.jl")
+include("Exceptions.jl")
+include("Automa.jl")
 include("IO.jl")
 #include("Mem.jl")
-#include("Ragel.jl")
 #include("ReaderHelper.jl")
 #include("RecordHelper.jl")
 include("Testing.jl")

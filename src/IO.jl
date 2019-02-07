@@ -29,15 +29,6 @@ for f in (:eof, :flush, :close)
     end
 end
 
-function Base.open(f::Function, ::Type{T}, args...; kwargs...) where T <: AbstractFormattedIO
-    io = open(T, args...; kwargs...)
-    try
-        f(io)
-    finally
-        close(io)
-    end
-end
-
 """
 Abstract data reader type.
 
@@ -49,6 +40,15 @@ Base.IteratorSize(::Type{T}) where T <: AbstractReader = Base.SizeUnknown()
 
 function Base.open(::Type{T}, filepath::AbstractString, args...; kwargs...) where T <: AbstractReader
     return T(open(filepath), args...; kwargs...)
+end
+
+function Base.open(f::Function, ::Type{T}, args...; kwargs...) where T <: AbstractFormattedIO
+    io = open(T, args...; kwargs...)
+    try
+        f(io)
+    finally
+        close(io)
+    end
 end
 
 function Base.read(input::AbstractReader)
