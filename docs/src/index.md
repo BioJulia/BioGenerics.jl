@@ -1,4 +1,4 @@
-# BioGenerics.jl
+# BioGenerics
 
 ```@index
 ```

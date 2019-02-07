@@ -5,19 +5,24 @@ os:
   - osx
 julia:
   - 1.1
-  - nightly
-matrix:
-  allow_failures:
-    - julia: nightly
-  fast_finish: true
 notifications:
-  email: false
+  email: benjward@protonmail.com
+  
+branches:
+    only:
+        #- master
+        - staging
+        - trying
+        - /^v[0-9]+\.[0-9]+\.[0-9]+$/ # version tags
+        
 after_success:
   - julia -e 'using Pkg; Pkg.add("Coverage"); using Coverage; Codecov.submit(process_folder())'
+
 jobs:
   include:
     - stage: Documentation
       julia: 1.1
+      os: linux
       script: julia --project=docs -e '
           using Pkg;
           Pkg.develop(PackageSpec(path=pwd()));

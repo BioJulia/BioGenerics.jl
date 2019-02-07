@@ -1,17 +1,19 @@
 using Documenter, BioGenerics
 
-makedocs(;
-    modules=[BioGenerics],
-    format=Documenter.HTML(),
-    pages=[
-        "Home" => "index.md",
+makedocs(
+    format = :html,
+    modules = [BioGenerics],
+    doctest = false,
+    strict = false,
+    pages = [
+        "Home" => "index.md"
     ],
-    repo="https://github.com/BioJulia/BioGenerics.jl/blob/{commit}{path}#L{line}",
-    sitename="BioGenerics.jl",
-    authors="Ben J. Ward",
-    assets=[],
+    sitename = "BioGenerics",
+    authors = "Ben J. Ward"
 )
 
-deploydocs(;
-    repo="github.com/BioJulia/BioGenerics.jl",
+deploydocs(
+    repo = "github.com/BioJulia/BioGenerics.jl",
+    deps = nothing,
+    make = nothing
 )
