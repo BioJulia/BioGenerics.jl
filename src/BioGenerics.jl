@@ -8,7 +8,7 @@
 
 module BioGenerics
     
-#include("declare.jl")
+include("methods.jl")
 include("Exceptions.jl")
 include("Automa.jl")
 include("IO.jl")
