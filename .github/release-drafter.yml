@@ -5,6 +5,8 @@ categories:
     label: feature
   - title: Bug Fixes
     label: fix
+  - title: Documentation
+    label: docs
 template: |
   ## What's Changed
   
