@@ -1,7 +1,7 @@
 using Documenter, BioGenerics
 
 makedocs(
-    format = :html,
+    format = Documenter.HTML(),
     modules = [BioGenerics],
     doctest = false,
     strict = false,
