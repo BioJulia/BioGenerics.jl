@@ -4,5 +4,5 @@
 ```
 
 ```@autodocs
-Modules = [BioGenerics]
+Modules = [BioGenerics, BioGenerics.IO, BioGenerics.Exceptions, BioGenerics.Testing]
 ```
