@@ -41,7 +41,7 @@ the master branch to try new features before release.
 BioGenerics is tested against Julia `1.X` on Linux, OS X, and Windows.
 
 [![Build Status](https://travis-ci.com/BioJulia/BioGenerics.svg?branch=master)](https://travis-ci.com/BioJulia/BioGenerics)
-[![Build Status](https://ci.appveyor.com/api/projects/status/github/BioJulia/BioGenerics?svg=true)](https://ci.appveyor.com/project/BioJulia/BioGenerics)
+[![Build status](https://ci.appveyor.com/api/projects/status/84j43foycyel8xpk?svg=true)](https://ci.appveyor.com/project/BenJWard/biogenerics)
 [![Codecov](https://codecov.io/gh/BioJulia/BioGenerics/branch/master/graph/badge.svg)](https://codecov.io/gh/BioJulia/BioGenerics)
 
 
