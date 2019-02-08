@@ -6,7 +6,6 @@ platform:
   - x64
 branches:
   only:
-    - master
     - staging
     - trying
     - /^v[0-9]+\.[0-9]+\.[0-9]+$/ # version tags

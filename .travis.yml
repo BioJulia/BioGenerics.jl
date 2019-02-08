@@ -18,9 +18,17 @@ branches:
 after_success:
   - julia -e 'using Pkg; Pkg.add("Coverage"); using Coverage; Codecov.submit(process_folder())'
 
+stages:
+    - name: test
+      # test only on bors trying and bors staging
+      if: branch IN (trying, staging)
+    - name: documentation
+      # build docs on bors trying, bors staging, master and for tags
+      if: branch IN (trying, staging) OR (anch = master AND type = push) OR tag IS present
+
 jobs:
   include:
-    - stage: Documentation
+    - stage: documentation
       julia: 1.1
       os: linux
       script: julia --project=docs -e '
