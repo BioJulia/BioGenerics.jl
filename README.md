@@ -3,7 +3,7 @@
 [![Latest Release](https://img.shields.io/github/release/BioJulia/BioGenerics.svg)](https://github.com/BioJulia/BioGenerics/releases/latest)
 [![MIT license](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/BioJulia/BioGenerics/blob/master/LICENSE)
 [![Stable](https://img.shields.io/badge/docs-stable-blue.svg)](https://BioJulia.github.io/BioGenerics/stable)
-[![Latest](https://img.shields.io/badge/docs-latest-blue.svg)](https://BioJulia.github.io/BioGenerics/latest)
+[![Latest](https://img.shields.io/badge/docs-dev-blue.svg)](https://BioJulia.github.io/BioGenerics/dev)
 [![Pkg Status](http://www.repostatus.org/badges/latest/active.svg)](http://www.repostatus.org/#active)
 [![Chat](https://img.shields.io/gitter/room/BioJulia/BioGenerics.svg)](https://gitter.im/BioJulia/BioGenerics)
 
