@@ -24,7 +24,7 @@ stages:
       if: branch IN (trying, staging)
     - name: documentation
       # build docs on bors trying, bors staging, master and for tags
-      if: branch IN (trying, staging) OR (banch = master AND type = push) OR tag IS present
+      if: branch IN (trying, staging) OR (branch = master AND type = push) OR tag IS present
 
 jobs:
   include:
