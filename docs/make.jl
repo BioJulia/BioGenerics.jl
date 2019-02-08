@@ -13,7 +13,7 @@ makedocs(
 )
 
 deploydocs(
-    repo = "github.com/BioJulia/BioGenerics.jl",
+    repo = "github.com/BioJulia/BioGenerics",
     deps = nothing,
     make = nothing
 )
