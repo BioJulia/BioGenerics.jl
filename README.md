@@ -1,9 +1,9 @@
 # <img src="./sticker.svg" width="30%" align="right" /> BioGenerics
 
-[![Latest Release](https://img.shields.io/github/release/BioJulia/BioGenerics.svg)](https://github.com/BioJulia/BioGenerics/releases/latest)
-[![MIT license](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/BioJulia/BioGenerics/blob/master/LICENSE)
-[![Stable](https://img.shields.io/badge/docs-stable-blue.svg)](https://BioJulia.github.io/BioGenerics/stable)
-[![Latest](https://img.shields.io/badge/docs-dev-blue.svg)](https://BioJulia.github.io/BioGenerics/dev)
+[![Latest Release](https://img.shields.io/github/release/BioJulia/BioGenerics.jl.svg)](https://github.com/BioJulia/BioGenerics.jl/releases/latest)
+[![MIT license](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/BioJulia/BioGenerics.jl/blob/master/LICENSE)
+[![Stable](https://img.shields.io/badge/docs-stable-blue.svg)](https://BioJulia.github.io/BioGenerics.jl/stable)
+[![Latest](https://img.shields.io/badge/docs-dev-blue.svg)](https://BioJulia.github.io/BioGenerics.jl/dev)
 [![Pkg Status](http://www.repostatus.org/badges/latest/active.svg)](http://www.repostatus.org/#active)
 [![Chat](https://img.shields.io/gitter/room/BioJulia/BioGenerics.svg)](https://gitter.im/BioJulia/BioGenerics)
 
@@ -17,19 +17,23 @@ BioJulia packages are defined here.
 
 ## Installation
 
-First make sure that you have the BioJulia package registry set up on your julia
-installation:
+BioGenerics is made available to install through BioJulia's package registry.
+
+Julia by default only watches the "General" package registry, so before you
+start, you should add the BioJulia package registry.
+
+Start a julia terminal, hit the `]` key to enter pkg mode (you should see the
+prompt change from `julia> ` to `pkg> `), then enter the following command:
 
 ```julia
-using Pkg.Registry
-Registry.add("git@github.com:BioJulia/BioJuliaRegistry.git")
+registry add https://github.com/BioJulia/BioJuliaRegistry.git
 ```
 
-Then, you can install BioGenerics from the Julia REPL:
+After you've added the registry, you can install BioGenerics from the julia
+REPL. Press `]` to enter pkg mode again, and enter the following:
 
 ```julia
-using Pkg
-add("BioGenerics")
+add BioGenerics
 ```
 
 If you are interested in the cutting edge of the development, please check out
@@ -40,9 +44,9 @@ the master branch to try new features before release.
 
 BioGenerics is tested against Julia `1.X` on Linux, OS X, and Windows.
 
-[![Build Status](https://travis-ci.com/BioJulia/BioGenerics.svg?branch=master)](https://travis-ci.com/BioJulia/BioGenerics)
+[![Build Status](https://travis-ci.com/BioJulia/BioGenerics.jl.svg?branch=master)](https://travis-ci.com/BioJulia/BioGenerics.jl)
 [![Build status](https://ci.appveyor.com/api/projects/status/84j43foycyel8xpk?svg=true)](https://ci.appveyor.com/project/BenJWard/biogenerics)
-[![Codecov](https://codecov.io/gh/BioJulia/BioGenerics/branch/master/graph/badge.svg)](https://codecov.io/gh/BioJulia/BioGenerics)
+[![Codecov](https://codecov.io/gh/BioJulia/BioGenerics.jl/branch/master/graph/badge.svg)](https://codecov.io/gh/BioJulia/BioGenerics.jl)
 
 
 ## Contributing
