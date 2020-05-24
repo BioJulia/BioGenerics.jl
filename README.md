@@ -17,19 +17,7 @@ BioJulia packages are defined here.
 
 ## Installation
 
-BioGenerics is made available to install through BioJulia's package registry.
-
-Julia by default only watches the "General" package registry, so before you
-start, you should add the BioJulia package registry.
-
-Start a julia terminal, hit the `]` key to enter pkg mode (you should see the
-prompt change from `julia> ` to `pkg> `), then enter the following command:
-
-```julia
-registry add https://github.com/BioJulia/BioJuliaRegistry.git
-```
-
-After you've added the registry, you can install BioGenerics from the julia
+You can install BioGenerics from the julia
 REPL. Press `]` to enter pkg mode again, and enter the following:
 
 ```julia
