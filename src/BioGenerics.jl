@@ -7,7 +7,7 @@
 # License is MIT: https://github.com/BioJulia/BioGenerics/blob/master/LICENSE.md
 
 module BioGenerics
-    
+
 include("methods.jl")
 include("Exceptions.jl")
 include("Automa.jl")
@@ -15,6 +15,7 @@ include("IO.jl")
 #include("Mem.jl")
 #include("ReaderHelper.jl")
 #include("RecordHelper.jl")
+include("Sorting.jl")
 include("Testing.jl")
 
 end # module BioGenerics
