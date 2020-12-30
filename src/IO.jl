@@ -14,6 +14,15 @@ module IO
 "Abstract formatted input/output type."
 abstract type AbstractFormattedIO end
 
+function (::Type{T})(f, io::IO) where {T <: AbstractFormattedIO}
+    fmt = T(io)
+    try
+        f(fmt)
+    finally
+        close(fmt)
+    end
+end
+
 """
     stream(io::AbstractFormattedIO)
 
