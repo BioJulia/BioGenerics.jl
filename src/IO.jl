@@ -91,7 +91,11 @@ See `subtypes(AbstractWriter)` for all available data writers.
 abstract type AbstractWriter <: AbstractFormattedIO end
 
 function Base.open(::Type{T}, filepath::AbstractString, args...; kwargs_...) where T <: AbstractWriter
-    kwargs = collect(kwargs_)
+    # Special case to improve inference by avoiding the kwarg stuff
+    if isempty(kwargs_)
+        return T(open(filepath, "w"), args...)
+    end
+    kwargs::Vector{<:Pair{Symbol}} = collect(kwargs_)
     i = findfirst(kwarg -> kwarg[1] == :append, kwargs)
     if i !== nothing
         append = kwargs[i][2]
