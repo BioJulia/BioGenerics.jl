@@ -5,6 +5,13 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Added
+- Add option to do `T(f, ::IO)` where `{T <: AbstractFormattedIO}`. This allows a user to do e.g.
+```julia
+record = FASTA.Reader(GzipDecompressorStream(open(path))) do reader
+    first(iterate(reader))
+end
+```
 
 ## [1.0.0] - 2019-02-08
 ### Added
