@@ -6,6 +6,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 ### Added
+- Add `groupname`
+- Add `hasgroupname`
+
+## [0.1.1]
+### Added
 - Add option to do `T(f, ::IO)` where `{T <: AbstractFormattedIO}`. This allows a user to do e.g.
 ```julia
 record = FASTA.Reader(GzipDecompressorStream(open(path))) do reader
@@ -13,7 +18,7 @@ record = FASTA.Reader(GzipDecompressorStream(open(path))) do reader
 end
 ```
 
-## [1.0.0] - 2019-02-08
+## [0.1.0] - 2019-02-08
 ### Added
 - IO module.
 - Automa module.
@@ -21,5 +26,6 @@ end
 - Testing module.
 - Add numerous generic methods.
 
-[Unreleased]: https://github.com/BioJulia/BioGenerics/compare/v1.0.0...HEAD
-[1.0.0]: https://github.com/BioJulia/BioGenerics/tree/v1.0.0
+[Unreleased]: https://github.com/BioJulia/BioGenerics/compare/v0.1.1...HEAD
+[0.1.1]: https://github.com/BioJulia/BioGenerics/compare/v0.1.0...v0.1.1
+[0.1.0]: https://github.com/BioJulia/BioGenerics/tree/v0.1.0
