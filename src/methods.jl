@@ -19,6 +19,8 @@ end
 # Base functions used in (and exported from) BioJulia packages.
 @declare (
     distance,
+    groupname,
+    hasgroupname,
     seqname,
     hasseqname,
     sequence,
