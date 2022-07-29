@@ -14,8 +14,8 @@ module IO
 "Abstract formatted input/output type."
 abstract type AbstractFormattedIO end
 
-function (::Type{T})(f, io::Base.IO) where {T <: AbstractFormattedIO}
-    fmt = T(io)
+function (::Type{T})(f::Function, io::Base.IO, args...; kwargs...) where {T <: AbstractFormattedIO}
+    fmt = T(io, args...; kwargs...)
     try
         f(fmt)
     finally
