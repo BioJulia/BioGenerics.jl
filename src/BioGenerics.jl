@@ -17,4 +17,6 @@ include("IO.jl")
 #include("RecordHelper.jl")
 include("Testing.jl")
 
+using .IO: readertype, writertype, @rdr_str, @wtr_str
+
 end # module BioGenerics
