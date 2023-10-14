@@ -10,11 +10,7 @@ module BioGenerics
     
 include("methods.jl")
 include("Exceptions.jl")
-include("Automa.jl")
 include("IO.jl")
-#include("Mem.jl")
-#include("ReaderHelper.jl")
-#include("RecordHelper.jl")
 include("Testing.jl")
 
 using .IO: readertype, writertype, @rdr_str, @wtr_str
