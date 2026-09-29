@@ -1,8 +1,7 @@
 module Automa
 
-import TranscodingStreams: TranscodingStream
-
-mutable struct State{S <: TranscodingStream}
+# `S` is the stream being parsed, typically a `TranscodingStreams.TranscodingStream`.
+mutable struct State{S}
     # Stream
     stream::S
     # Machine state
