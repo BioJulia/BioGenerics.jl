@@ -7,6 +7,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## [Unreleased]
 ### Added
 - Add GitHub Actions CI workflow to test downstream compatibility with direct dependants.
+- Add GitHub Actions CI workflow for unit tests across multiple platforms.
 
 ## [0.1.5] - 2024-07-11
 ### Changed
